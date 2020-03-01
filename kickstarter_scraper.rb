@@ -1,5 +1,21 @@
-# require libraries/modules here
+require relative'..kickstarter_scraper'
+require 'nokogiri'
+require 'pry'
 
-def create_project_hash
-  # write your code here
+
+def find_my_way_project
+ 
+html =
+File.read('fixtures/kickstart
+er.html')
+kickstarter =
+Nokogiri::HTML(html)
+  binding.pry
 end
+
+
+end
+
+find_my_way_project
+
+
