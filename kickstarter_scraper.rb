@@ -14,7 +14,7 @@ Nokogiri::HTML(html)
 end
 
 
-# projects:
+projects:
 kickstarter.css("li.project.grid_4")
 
 
