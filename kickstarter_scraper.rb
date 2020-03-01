@@ -22,9 +22,27 @@ end
  
  end
  
- 
+def create_project_hash
+  html =
+File.read('features/kickstart
+er.html')
+  kickstarter = 
+Nokogiri::HTML(html)
+
+  projects = {}
+  
+#iterate through the 
+projects
+
+  kickstarter.css("li.project
+  .grid_4).each do |project|
+      projects[project] = {}
+  end
+  
+  
+  # return the projects create_project_hash
+  projects
 end
 
-find_my_way_project
 
 
